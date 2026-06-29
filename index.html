@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tusion Center | Level Up Your Learning</title>
+    <meta name="description" content="A Place for Scientific way of learning and growth. IIT Foundation and Competitive Exams.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <!-- Left Logo -->
+            <a href="#" class="brand-logo">
+                <span class="brand-icon"><i class="fa-solid fa-bolt"></i></span>
+                <span class="brand-text">Tusion <span style="color: var(--accent-secondary)">Center</span></span>
+            </a>
+            
+            <!-- Center Navigation -->
+            <nav class="main-nav">
+                <a href="#" class="nav-link">Courses</a>
+                <a href="#" class="nav-link">Mentors</a>
+                <a href="fees.html" class="nav-link">Fees Structure</a>
+            </nav>
+            
+            <!-- Right Account Logo -->
+            <div class="header-actions">
+                <a href="#" class="account-btn" aria-label="Account">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                <a href="#" class="menu-toggle" aria-label="Menu">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- The scroll container will have a large height to allow scrolling through the animation -->
+        <section class="hero-scroll-container">
+            <div class="hero-sticky-area">
+                <!-- Abstract glowing orbs for background effect -->
+                <div class="glow-orb orb-1"></div>
+                <div class="glow-orb orb-2"></div>
+                
+                <div class="book-container">
+                    <div class="book">
+                        
+                        <!-- PAGE 1 (Cover) -->
+                        <div class="page page-1" style="z-index: 6;">
+                            <div class="face front cover-front">
+                                <div class="curl-shadow shadow-front"></div>
+                                <h1>Tusion Center</h1>
+                                <p class="subtitle">A Place for Scientific way of learning and growth.</p>
+                            </div>
+                            <div class="face back cover-back">
+                                <div class="curl-shadow shadow-back"></div>
+                                <div class="page-content">
+                                    <h2>Welcome to the Future</h2>
+                                    <p>We combine top-tier mentors with bleeding-edge methods to get you the grades you deserve. No more boring lectures.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PAGE 2 (Foundation) -->
+                        <div class="page page-2" style="z-index: 5;">
+                            <div class="face front content-front">
+                                <div class="curl-shadow shadow-front"></div>
+                                <div class="page-content">
+                                    <h2><i class="fa-solid fa-layer-group" style="color: var(--accent-secondary);"></i> Foundation Courses</h2>
+                                    <p>Building strong fundamentals early is the key to cracking tough exams.</p>
+                                    <div class="class-tags">
+                                        <button class="class-btn" data-class="7">Class 7</button>
+                                        <button class="class-btn" data-class="8">Class 8</button>
+                                        <button class="class-btn" data-class="9">Class 9</button>
+                                        <button class="class-btn" data-class="10">Class 10</button>
+                                        <button class="class-btn" data-class="11">Class 11</button>
+                                        <button class="class-btn" data-class="12">Class 12</button>
+                                    </div>
+                                </div>
+                                
+                                <!-- Syllabus Overlay (Hidden by default) -->
+                                <div class="syllabus-overlay">
+                                    <div class="overlay-header">
+                                        <h3 id="overlay-title">Class 7 Syllabus</h3>
+                                        <button class="close-overlay"><i class="fa-solid fa-xmark"></i></button>
+                                    </div>
+                                    <div class="overlay-content">
+                                        <div class="board-column">
+                                            <h4>CBSE</h4>
+                                            <ul id="cbse-list"></ul>
+                                        </div>
+                                        <div class="board-column">
+                                            <h4>Kerala State Board</h4>
+                                            <ul id="kerala-list"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="face back content-back">
+                                <div class="curl-shadow shadow-back"></div>
+                                <div class="page-content">
+                                    <h2><i class="fa-solid fa-brain" style="color: var(--accent-primary);"></i> Competitive Exams</h2>
+                                    <p>Master the hardest exams with our rigorous curriculum.</p>
+                                    <ul class="exam-list">
+                                        <li>IIT Mains & Advance</li>
+                                        <li>EAMCET & Medical (NEET)</li>
+                                        <li>NTSE & Olympiads</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PAGE 3 (Elite Preparation) -->
+                        <div class="page page-3" style="z-index: 4;">
+                            <div class="face front content-front">
+                                <div class="curl-shadow shadow-front"></div>
+                                <div class="page-content">
+                                    <h2><i class="fa-solid fa-trophy" style="color: var(--accent-tertiary);"></i> Elite Preparation</h2>
+                                    <p>We train students specifically for mathematics and science Olympiads.</p>
+                                    <ul class="exam-list">
+                                        <li>IMO (Maths)</li>
+                                        <li>SIMO</li>
+                                        <li>SIFO</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="face back content-back">
+                                <div class="curl-shadow shadow-back"></div>
+                                <div class="page-content center-content">
+                                    <div class="glass-card stat-card">
+                                        <i class="fa-solid fa-arrow-trend-up"></i>
+                                        <div>
+                                            <h3>98%</h3>
+                                            <p>Success Rate</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PAGE 4 (JEE & NEET) -->
+                        <div class="page page-4" style="z-index: 3;">
+                            <div class="face front content-front">
+                                <div class="curl-shadow shadow-front"></div>
+                                <div class="page-content">
+                                    <h2><i class="fa-solid fa-rocket" style="color: var(--accent-tertiary);"></i> JEE Advanced</h2>
+                                    <p>Crack IIT with our specialized rigorous curriculum.</p>
+                                    <ul class="exam-list">
+                                        <li>Expert Mathematics & Physics Faculty</li>
+                                        <li>Weekly Mock Tests</li>
+                                        <li>Previous Year Question Analysis</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="face back content-back">
+                                <div class="curl-shadow shadow-back"></div>
+                                <div class="page-content">
+                                    <h2><i class="fa-solid fa-stethoscope" style="color: var(--accent-primary);"></i> NEET Medical</h2>
+                                    <p>Master Biology and Chemistry to secure your medical seat.</p>
+                                    <ul class="exam-list">
+                                        <li>Line-by-line NCERT mastery</li>
+                                        <li>High-yield diagrams & concepts</li>
+                                        <li>AIIMS level preparation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PAGE 5 (Online & YouTube) -->
+                        <div class="page page-5" style="z-index: 2;">
+                            <div class="face front content-front">
+                                <div class="curl-shadow shadow-front"></div>
+                                <div class="page-content">
+                                    <h2><i class="fa-solid fa-laptop" style="color: var(--accent-secondary);"></i> Online Classes</h2>
+                                    <p>Can't make it to the center? Learn from home without compromising quality.</p>
+                                    <ul class="exam-list">
+                                        <li>Live Interactive Sessions</li>
+                                        <li>Instant Doubt Clearing</li>
+                                        <li>Access to Recorded Lectures</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="face back content-back">
+                                <div class="curl-shadow shadow-back"></div>
+                                <div class="page-content center-content">
+                                    <div class="glass-card stat-card" style="border-color: #ff0000; background: rgba(255, 0, 0, 0.05);">
+                                        <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                                        <div>
+                                            <h3 style="font-size: 2rem;">Free Learning</h3>
+                                            <p>Subscribe to our channel for strategies, tips, and free lessons!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PAGE 6 (Back Cover, base page) -->
+                        <div class="page page-6" style="z-index: 1;">
+                            <div class="face front cover-back">
+                                <div class="page-content center-content">
+                                    <h2>Ready to Level Up?</h2>
+                                    <a href="#" class="btn btn-primary" style="margin-top: 30px;">Start Grinding <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="face back cover-front">
+                                <!-- Back cover exterior -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location & Preparation Section -->
+        <section class="location-prep-section">
+            <div class="prep-container">
+                
+                <!-- Left: Map & Location -->
+                <div class="map-column">
+                    <div class="map-glass-card">
+                        <iframe src="https://maps.google.com/maps?q=Kerala&t=&z=7&ie=UTF8&iwloc=&output=embed" width="100%" height="300" frameborder="0" style="border:0; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); margin-bottom: 20px;" allowfullscreen></iframe>
+                        <div class="location-details">
+                            <h3><i class="fa-solid fa-location-dot" style="color: var(--accent-tertiary);"></i> Tusion Center HQ</h3>
+                            <p>Knowledge Avenue, Horizon District<br>Kerala, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Timeline Checklist -->
+                <div class="prep-column">
+                    <h2 class="prep-title">Daily Grind Setup</h2>
+                    
+                    <div class="prep-timeline">
+                        <!-- Timeline Item 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                            <div class="timeline-content">
+                                <h4>Pens & Pencils</h4>
+                                <p>Bring your lucky pens. We do a lot of solving here.</p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon"><i class="fa-solid fa-book-open"></i></div>
+                            <div class="timeline-content">
+                                <h4>Notebooks</h4>
+                                <p>Grab your fresh notebooks. You'll fill them quickly.</p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 3 (Final Destination) -->
+                        <div class="timeline-item final-item">
+                            <div class="timeline-icon pulse-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div class="timeline-content">
+                                <h4>Evening Classes</h4>
+                                <p class="highlight-time">5:00 PM to 8:30 PM</p>
+                                <p>Grab your gear and don't be late. The competition never sleeps.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Online Classes Section -->
+        <section class="location-prep-section" style="border-top: 1px solid var(--glass-border);">
+            <div class="prep-container">
+                
+                <!-- Left: Timeline Checklist -->
+                <div class="prep-column">
+                    <h2 class="prep-title">Online Class Setup</h2>
+                    
+                    <div class="prep-timeline">
+                        <!-- Timeline Item 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            <div class="timeline-content">
+                                <h4>Online Devices</h4>
+                                <p>Keep your laptop or tablet fully charged with a stable internet connection.</p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                            <div class="timeline-content">
+                                <h4>Study Materials</h4>
+                                <p>Download your digital PDFs and keep a physical notebook ready for rough work.</p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 3 (Final Destination) -->
+                        <div class="timeline-item final-item">
+                            <div class="timeline-icon pulse-icon" style="background: #fff; border-color: #2D8CFF; box-shadow: 0 0 0 0 rgba(45, 140, 255, 0.7); animation: pulseZoom 2s infinite;">
+                                <span style="font-weight: 900; font-size: 0.55rem; color: #2D8CFF; letter-spacing: 0.5px; font-family: sans-serif;">ZOOM</span>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Join Zoom Meeting</h4>
+                                <p class="highlight-time" style="background: rgba(45, 140, 255, 0.1); color: #2D8CFF; border-color: rgba(45, 140, 255, 0.3);">Check WhatsApp for Link</p>
+                                <p>Log in 5 minutes early. Mute your mic, turn on your camera, and let's get to work.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Laptop Illustration -->
+                <div class="map-column">
+                    <div class="map-glass-card">
+                        <img src="online_class_setup_realistic.png" alt="Realistic Online Class Setup" class="map-image" style="margin-bottom: 0;">
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us-section">
+            <div class="content-wrapper" style="max-width: 1200px; margin: 0 auto;">
+                <div class="section-header">
+                    <h2>Why Choose Us?</h2>
+                    <p>We don't just teach. We engineer success.</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <h3>Expert Faculty</h3>
+                        <p>Learn from top educators with decades of combined experience in CBSE and State Boards.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-laptop-file"></i></div>
+                        <h3>Hybrid Learning</h3>
+                        <p>Seamlessly switch between our physical classrooms and high-quality online interactive sessions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-comments"></i></div>
+                        <h3>Instant Doubt Clearing</h3>
+                        <p>Never stay stuck. Get your questions answered immediately during classes or via WhatsApp.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-ranking-star"></i></div>
+                        <h3>Proven Results</h3>
+                        <p>A consistent track record of producing state and national toppers year after year.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Free Demo CTA Section -->
+        <section class="demo-cta-section">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>Experience the Grind. <br><span>2 Days Free Demo.</span></h2>
+                    <p>Not sure if Tusion Center is right for you? Try our classes completely risk-free for two days. Experience our methodology before you commit.</p>
+                    <a href="#" class="btn btn-primary cta-btn">Book Your Free Demo Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="cta-decoration">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2><i class="fa-solid fa-bolt" style="color: var(--accent-tertiary);"></i> Tusion Center</h2>
+                <p>Engineering success through structured learning, dedicated mentorship, and proven methodologies.</p>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> +91 xxxxxx</li>
+                    <li><i class="fa-solid fa-envelope"></i> xxxxxxxxx@gmail.com</li>
+                </ul>
+            </div>
+            
+            <div class="footer-social">
+                <h3>Join Our Community</h3>
+                <p>Don't forget to subscribe to our YouTube channel for free tutorials, tips, and updates!</p>
+                <a href="#" class="btn btn-youtube"><i class="fa-brands fa-youtube"></i> Subscribe Now</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tusion Center. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
